@@ -1,0 +1,44 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Services";
+}
+
+<div class="page-wrap">
+    <div class="card card-soft p-4 mb-3">
+        <h1>Services</h1>
+        <p class="text-muted mb-0">
+            Vi leverer løsninger, der er nemme at vedligeholde og nemme at måle på.
+        </p>
+    </div>
+
+    <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-soft p-3 h-100">
+                <h5>Webapplikationer</h5>
+                <p class="text-muted">ASP.NET Core MVC / Blazor med fokus på performance og struktur.</p>
+                <a class="btn btn-accent track-click" data-track="service_webapps"
+                   asp-controller="Site" asp-action="Contact">Få et tilbud</a>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-soft p-3 h-100">
+                <h5>API & integration</h5>
+                <p class="text-muted">REST API’er, integration til tredjepartssystemer og datamodellering.</p>
+                <a class="btn btn-accent track-click" data-track="service_integration"
+                   asp-controller="Site" asp-action="Contact">Tal med os</a>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-soft p-3 h-100">
+                <h5>Tracking & dashboards</h5>
+                <p class="text-muted">Custom events, sessioner og dashboards til beslutninger baseret på data.</p>
+                <a class="btn btn-accent track-click" data-track="service_tracking"
+                   asp-controller="Site" asp-action="Contact">Kom i gang</a>
+            </div>
+        </div>
+    </div>
+</div>

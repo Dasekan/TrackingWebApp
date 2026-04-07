@@ -1,0 +1,33 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Cases";
+}
+
+<div class="page-wrap">
+    <div class="card card-soft p-4 mb-3">
+        <h1>Cases</h1>
+        <p class="text-muted mb-0">Eksempler på projekter med fokus på drift, data og brugeroplevelse.</p>
+    </div>
+
+    <div class="row g-3">
+        <div class="col-12 col-lg-6">
+            <div class="card card-soft p-3 h-100">
+                <h5>Case: Kundeportal i .NET</h5>
+                <p class="text-muted">Ny portal med login, dokumenter og måling af brugerflow.</p>
+                <a class="btn btn-accent track-click" data-track="case_portal"
+                   asp-controller="Site" asp-action="Contact">Spørg ind til casen</a>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="card card-soft p-3 h-100">
+                <h5>Case: Integration til ERP</h5>
+                <p class="text-muted">API-integration og datakvalitet – med monitorering og rapportering.</p>
+                <a class="btn btn-accent track-click" data-track="case_erp"
+                   asp-controller="Site" asp-action="Contact">Spørg ind til casen</a>
+            </div>
+        </div>
+    </div>
+</div>

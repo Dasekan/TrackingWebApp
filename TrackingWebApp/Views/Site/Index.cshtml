@@ -1,0 +1,49 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "NordicFlow";
+}
+
+<div class="page-wrap">
+    <div class="hero mb-4">
+        <span class="badge-soft">Digitalisering • Integration • Web</span>
+        <h1 class="mt-3">Qistal hjælper virksomheder med at få systemer til at spille sammen</h1>
+        <p>
+            Vi bygger web-løsninger og integrationer i .NET, og vi gør det målbart.
+            Se vores services og cases – og kontakt os for en uforpligtende snak.
+        </p>
+
+        <div class="d-flex gap-2 mt-3 flex-wrap">
+            <a class="btn btn-accent track-click" data-track="cta_services"
+               asp-controller="Site" asp-action="Services">Se services</a>
+
+            <a class="btn btn-accent track-click" data-track="cta_cases"
+               asp-controller="Site" asp-action="Cases">Se cases</a>
+
+            <a class="btn btn-accent track-click" data-track="cta_contact"
+               asp-controller="Site" asp-action="Contact">Kontakt</a>
+        </div>
+    </div>
+
+    <div class="row g-3">
+        <div class="col-12 col-md-4">
+            <div class="card card-soft p-3 h-100">
+                <h5 class="card-title">Webudvikling</h5>
+                <p class="card-text">Moderne MVC/Blazor-løsninger i .NET – bygget til drift og videreudvikling.</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="card card-soft p-3 h-100">
+                <h5 class="card-title">Integration</h5>
+                <p class="card-text">API’er, dataflows og systemintegration, så forretningen hænger sammen.</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="card card-soft p-3 h-100">
+                <h5 class="card-title">Tracking & indsigt</h5>
+                <p class="card-text">Få overblik over hvad brugerne gør – og optimer ud fra data.</p>
+            </div>
+        </div>
+    </div>
+</div>

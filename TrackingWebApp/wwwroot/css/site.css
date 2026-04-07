@@ -1,0 +1,173 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+:root {
+    --bg: #f7f7f8;
+    --surface: #ffffff;
+    --text: #111827;
+    --muted: #6b7280;
+    --border: rgba(17,24,39,.10);
+    --shadow: 0 10px 30px rgba(17,24,39,.08);
+    --accent: #2b5cff;
+    --accent-hover: #234be0;
+    --accent-soft: rgba(43,92,255,.10);
+    --radius: 18px;
+    --radius-sm: 14px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    letter-spacing: .1px;
+}
+
+/* Container spacing */
+.page-wrap {
+    padding-top: 2.25rem;
+    padding-bottom: 3.25rem;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5 {
+    letter-spacing: -0.3px;
+}
+
+p {
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    backdrop-filter: saturate(1.2) blur(8px);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--text);
+    opacity: .78;
+    font-weight: 500;
+}
+
+    .navbar-light .navbar-nav .nav-link:hover {
+        opacity: 1;
+    }
+
+/* Brand */
+.brand {
+    font-weight: 800;
+    letter-spacing: -0.4px;
+}
+
+/* Surfaces / cards */
+.card-soft {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+    .card-soft .card-title {
+        color: var(--text);
+        font-weight: 700;
+    }
+
+    .card-soft .card-text {
+        color: var(--muted);
+    }
+
+/* Hero */
+.hero {
+    background: radial-gradient(800px 300px at 20% 0%, var(--accent-soft), transparent 55%), radial-gradient(800px 300px at 80% 0%, rgba(0,0,0,.04), transparent 60%), var(--surface);
+    border: 1px solid var(--border);
+    border-radius: calc(var(--radius) + 4px);
+    box-shadow: var(--shadow);
+    padding: 30px;
+}
+
+    .hero h1 {
+        font-size: clamp(1.8rem, 3vw, 2.4rem);
+        line-height: 1.2;
+        margin-bottom: .6rem;
+    }
+
+    .hero p {
+        margin-bottom: 0;
+    }
+
+/* Badges */
+.badge-soft {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    background: rgba(17,24,39,.04);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    border-radius: 999px;
+    padding: 7px 12px;
+    font-size: .9rem;
+}
+
+/* Buttons */
+.btn-accent {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+    border-radius: var(--radius-sm);
+    padding: 10px 14px;
+    font-weight: 600;
+}
+
+    .btn-accent:hover {
+        background: var(--accent-hover);
+        border-color: var(--accent-hover);
+        color: #fff;
+    }
+
+.btn-ghost {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: var(--radius-sm);
+    padding: 10px 14px;
+    font-weight: 600;
+}
+
+    .btn-ghost:hover {
+        background: rgba(17,24,39,.03);
+    }
+
+/* Links inside cards */
+.card a.btn {
+    width: fit-content;
+}
+
+/* Footer */
+.site-footer {
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    padding: 1.5rem 0;
+}
