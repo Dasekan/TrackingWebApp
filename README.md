@@ -1,132 +1,138 @@
-Tracking Web App
-Beskrivelse
+# Tracking Web App
 
-Tracking Web App er en ASP.NET Core MVC-applikation udviklet i C#, som registrerer og analyserer brugeraktivitet på en hjemmeside.
+## Description
 
-Applikationen indeholder både en offentlig hjemmeside og et administrationspanel, hvor registrerede tracking-events kan vises og analyseres. Brugerinteraktioner sendes til et REST API og gemmes i en SQLite-database via Entity Framework Core.
+Tracking Web App is an ASP.NET Core MVC application designed to collect, store, and analyze user interactions on a website.
 
-Projektet demonstrerer, hvordan webanalyse kan implementeres i en ASP.NET Core-applikation uden brug af eksterne analyseværktøjer.
+The application provides a complete tracking solution consisting of a public website, a REST API, and an administrative dashboard. User interactions are captured, stored in a SQLite database, and presented through an intuitive interface for analysis.
 
-Funktioner
-Registrering af brugeraktivitet
-REST API til modtagelse af tracking-events
-Gemmer events i SQLite-database
-Administrationspanel
-Cookie Authentication
-Statistik over brugeraktivitet
-Razor Views
-Entity Framework Core
-MVC-arkitektur
-Teknologier
-C#
-.NET 8
-ASP.NET Core MVC
-ASP.NET Core Web API
-Entity Framework Core
-SQLite
-Cookie Authentication
-Bootstrap
-Razor Views
-Projektstruktur
+The project demonstrates the implementation of a custom analytics platform without relying on third-party tracking services.
+
+---
+
+## Features
+
+- Track website user interactions
+- REST API for receiving tracking events
+- Store tracking data in a SQLite database
+- Authentication-protected admin dashboard
+- View and analyze recorded events
+- Entity Framework Core integration
+- Cookie Authentication
+- MVC architecture
+
+---
+
+## Technologies
+
+### Backend
+- C#
+- .NET 8
+- ASP.NET Core MVC
+- ASP.NET Core Web API
+- Entity Framework Core
+
+### Database
+- SQLite
+
+### Frontend
+- Razor Views
+- HTML
+- CSS
+- Bootstrap
+- JavaScript
+
+### Authentication
+- Cookie Authentication
+
+---
+
+## Project Structure
+
+```text
 TrackingWebApp
 │
 ├── Controllers
-│   ├── SiteController
-│   ├── TrackingController
-│   └── AdminController
-│
 ├── Data
-│   └── AppDbContext
-│
+├── DTOs
 ├── Entities
-│
-├── Dtos
-│
 ├── Services
-│
 ├── ViewModels
-│
 ├── Views
-│
 ├── wwwroot
-│
 └── Program.cs
-Hvordan fungerer systemet?
-Brugeren besøger hjemmesiden.
-JavaScript registrerer brugerinteraktioner.
-Tracking-events sendes til:
-POST /api/tracking/event
-API'et validerer data.
-Eventet gemmes i SQLite via Entity Framework Core.
-Administrator kan efterfølgende se data og statistik via administrationspanelet.
-API
-Test API
-GET /api/tracking/ping
+```
 
-Returnerer
+---
 
-{
-    "message": "Tracking API virker!"
-}
-Registrer tracking-event
-POST /api/tracking/event
+## How It Works
 
-Eksempel
+1. A visitor interacts with the website.
+2. JavaScript captures the interaction.
+3. The event is sent to the REST API.
+4. The API validates the incoming data.
+5. Entity Framework Core stores the event in a SQLite database.
+6. Administrators can review the collected data through the admin dashboard.
 
-{
-    "eventType": "click",
-    "path": "/services",
-    "elementId": "btnContact",
-    "sessionId": "abc123"
-}
-Hent tracking-events
-GET /api/tracking/events
+---
 
-Returnerer de seneste registrerede events.
+## Installation
 
-Installation
+Clone the repository
 
-Klon projektet
-
+```bash
 git clone https://github.com/Dasekan/TrackingWebApp.git
+```
 
-Gå til projektmappen
+Navigate to the project
 
+```bash
 cd TrackingWebApp
+```
 
-Installer dependencies
+Restore NuGet packages
 
+```bash
 dotnet restore
+```
 
-Kør projektet
+Run the application
 
+```bash
 dotnet run
+```
 
-Applikationen opretter automatisk SQLite-databasen ved første migration.
+---
 
-Kompetencer demonstreret
+## Skills Demonstrated
 
-Projektet demonstrerer erfaring med:
+This project demonstrates experience with:
 
-ASP.NET Core MVC
-REST API
-Entity Framework Core
-SQLite
-Authentication
-MVC-arkitektur
-Dependency Injection
-DTO-design
-CRUD-operationer
-Databasehåndtering
-Razor Views
-Mulige forbedringer
-Dashboard med grafer
-Filtrering af events
-Eksport til CSV eller Excel
-Docker-support
-Unit Tests
-SignalR til live tracking
-Azure deployment
-Udviklet af
+- ASP.NET Core MVC
+- REST API development
+- Entity Framework Core
+- SQLite
+- Cookie Authentication
+- CRUD operations
+- Dependency Injection
+- MVC architecture
+- Database design
+- Object-Oriented Programming
 
-Dasekan
+---
+
+## Future Improvements
+
+- Interactive analytics dashboard
+- Charts and data visualization
+- Export tracking data to CSV or Excel
+- Docker support
+- Unit and integration testing
+- Real-time tracking using SignalR
+- User and session analytics
+
+---
+
+## Developed by
+
+**Dasekan Allan Karim**
